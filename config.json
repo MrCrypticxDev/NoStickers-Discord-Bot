@@ -1,0 +1,9 @@
+{
+	"prefix": "!",
+	"token": "YOUR_BOT_TOKEN",
+	"mongoURL": "Mongo_URL",
+	"ownerIDs": [
+		"503215722407657478",
+		"572512230701006851"
+	]
+}
