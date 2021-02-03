@@ -1,19 +1,19 @@
-const { Collection, Client } = require("discord.js");
-const { connect } = require("mongoose");
+const {Collection, Client} = require('discord.js');
+const {connect} = require('mongoose');
 const client = new Client();
 
-client.config = require("./config.json");
+client.config = require('./config.json');
 client.commands = new Collection();
 client.aliases = new Collection();
 
-connect(client.config.mongoURL,{
-	useUnifiedTopology: true,
-	useNewUrlParser: true,
-	useFindAndModify: false
+connect(client.config.mongoURL, {
+  useUnifiedTopology: true,
+  useNewUrlParser: true,
+  useFindAndModify: false,
 }).then(() => {
-	client.login(client.config.token).then(() => {
-		["events", "commands"].forEach((s) => {
-			require(`./Handlers/${s}.js`)(client);
-		});
-	})
+  client.login(client.config.token).then(() => {
+    ['events', 'commands'].forEach((s) => {
+      require(`./Handlers/${s}.js`)(client);
+    });
+  });
 }).catch((e) => console.log(e.stack));

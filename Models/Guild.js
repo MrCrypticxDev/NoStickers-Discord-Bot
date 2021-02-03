@@ -1,8 +1,8 @@
-const { Schema, model } = require("mongoose");
+const {Schema, model} = require('mongoose');
 
 const NoStickersGuildSchema = new Schema({
-	guildID: String,
-	disableStickerUsage: Array
+  guildID: String,
+  disableStickerUsage: Array,
 });
 
-module.exports = model('NoStickersGuild', NoStickersGuildSchema)
+module.exports = model('NoStickersGuild', NoStickersGuildSchema);
