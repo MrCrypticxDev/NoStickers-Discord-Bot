@@ -10,7 +10,7 @@ class helpCommand {
 		let helpEmbed = new MessageEmbed()
 		.setAuthor('NoStickers\'s Help Menu', client.user.avatarURL())
 		.setColor('#f04747')
-		.setDescription('`stickers` - Enables stickers for the specific channel\s\n`nostickers` - Disables stickers for the specific channel\s\n`invite` - Invite me to your server.')
+		.setDescription('`stickers` - Enables stickers for the specific channel\s\n`nostickers` - Disables stickers for the specific channel\s\n`invite` - Invite me to your server.\n`github` - The link to my repository.')
 		.setFooter(`Requested by ${message.author.tag}`, message.author.displayAvatarURL({
 			dynamic: true,
 			size: 1024,
