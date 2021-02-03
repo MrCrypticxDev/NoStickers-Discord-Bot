@@ -8,9 +8,9 @@ class helpCommand {
 
 	async main(client, message, args){
 		let helpEmbed = new MessageEmbed()
-		.setAuthor('NoSticker\'s Help Menu', client.user.avatarURL())
+		.setAuthor('NoStickers\'s Help Menu', client.user.avatarURL())
 		.setColor('#f04747')
-		.setDescription('`stickers` - Enables stickers for the specific channel(s)\n`nostickers` - Disables stickers for the specific channel(s)\n`invite` - Invite me to your server.')
+		.setDescription('`stickers` - Enables stickers for the specific channel\s\n`nostickers` - Disables stickers for the specific channel\s\n`invite` - Invite me to your server.')
 		.setFooter(`Requested by ${message.author.tag}`, message.author.displayAvatarURL({
 			dynamic: true,
 			size: 1024,

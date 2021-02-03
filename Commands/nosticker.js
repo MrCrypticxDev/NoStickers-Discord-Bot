@@ -1,5 +1,5 @@
 const Guild = require("../Models/Guild.js");
-
+const Discord = require('discord.js')
 class nostickerCommand {
 
 	constructor(){
@@ -28,7 +28,7 @@ class nostickerCommand {
 			upsert: true
 		});
 
-		return message.channel.send("Successfully disabled stickers for the channel(s) given.");
+		return message.channel.send({ embed: new Discord.MessageEmbed().setDescription("<:white_check_mark:726203404799442965> Stickers will be deleted in the given channel\s.").setColor('#fefbfb')});
 
 	}
 

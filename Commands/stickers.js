@@ -1,5 +1,5 @@
 const Guild = require("../Models/Guild.js");
-
+const Discord = require('discord.js')
 class stickersCommand {
 
 	constructor(){
@@ -25,7 +25,7 @@ class stickersCommand {
 			upsert: true
 		});
 
-		let msg = await message.channel.send(`Successfully enabled stickers for the channel(s) given.`)
+		let msg = await message.channel.send({ embed: new Discord.MessageEmbed().setDescription(`<:white_check_mark:726203404799442965> Stickers will be allowed in the given channel\s.`).setColor('#fefbfb')})
 		return msg.delete({ timeout: 10000 }).catch();
 
 	}
