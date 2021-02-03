@@ -28,7 +28,7 @@ class nostickerCommand {
 			upsert: true
 		});
 
-		return message.channel.send("Successfully disabled stickers for the given channels(s)");
+		return message.channel.send("Successfully disabled stickers for the channel(s) given.");
 
 	}
 
