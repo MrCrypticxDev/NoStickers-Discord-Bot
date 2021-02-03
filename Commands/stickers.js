@@ -25,7 +25,7 @@ class stickersCommand {
 			upsert: true
 		});
 
-		let msg = await message.channel.send(`<:white_check_mark:726203404799442965> Successfully enabled stickers for the given channel(s)`)
+		let msg = await message.channel.send(`Successfully enabled stickers for the channel(s) given.`)
 		return msg.delete({ timeout: 10000 }).catch();
 
 	}
