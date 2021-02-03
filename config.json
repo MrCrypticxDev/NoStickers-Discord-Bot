@@ -1,8 +1,8 @@
 {
 	"prefix": "!",
-	"token": "NzYzMTUxOTc0NDUwODU1OTQ3.X3ziqQ.xIZ8j3lDkJKbwvICpUhhO9TPC90",
-	"mongoURL": "mongodb+srv://CryptBot:CryptBot@.1@cluster0.gts4b.mongodb.net?retryWrites=true&w=majority",
+	"token": "YOUR_BOT_TOKEN",
+	"mongoURL": "YOUR_MONGOURL",
 	"ownerIDs": [
-		"503215722407657478"
+		"YOUR_USER_ID"
 	]
 }
