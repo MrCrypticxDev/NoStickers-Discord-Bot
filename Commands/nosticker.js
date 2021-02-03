@@ -51,7 +51,7 @@ class nostickerCommand {
     return message.channel.send({
       embed: new Discord.MessageEmbed()
           // eslint-disable-next-line max-len
-          .setDescription('<:white_check_mark:726203404799442965> Stickers will be deleted in the given channels.')
+          .setDescription("<:white_check_mark:726203404799442965> Stickers will be deleted in the given channel\s.")
           .setColor('#fefbfb'),
     });
   }
