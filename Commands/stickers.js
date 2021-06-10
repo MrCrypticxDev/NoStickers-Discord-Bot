@@ -16,8 +16,8 @@ class stickersCommand {
    * Allows stickers in the specified channel(s)
    * @param {client} client Discord.js client instance
    * @param {message} message Discord.js message instance
-   * @param {Array.<string>} args The message arguments
-   * @return {void}
+   * @param {Array<string>} args The message arguments
+   * @returns {void}
    */
   async main(client, message, args) {
     // Allows sending of stickers in the specified channel(s)
