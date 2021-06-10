@@ -1,7 +1,6 @@
 /**
- *
  * @param {array} filepath to folder to tranverse files
- * @return {array} all files in folder including subfolders
+ * @returns {array} all files in folder including subfolders
  */
 function getFiles(filepath) {
   const items = [];
