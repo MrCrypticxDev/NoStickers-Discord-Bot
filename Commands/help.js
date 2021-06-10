@@ -15,7 +15,7 @@ class helpCommand {
    * Shows the help embed
    * @param {client} client Discord.js client instance
    * @param {message} message Discord.js message instance
-   * @param {Array.<string>} args The message arguments
+   * @param {Array<string>} args The message arguments
    * @returns {void}
    */
   async main(client, message, args) {
@@ -23,10 +23,11 @@ class helpCommand {
         .setAuthor('NoStickers\'s Help Menu', client.user.avatarURL())
         .setColor('#f04747')
         .setDescription(`
-\`stickers\` - Enables stickers for the specific channels
-\`nostickers\` - Disables stickers for the specific channels
-\`invite\` - Invite me to your server.
-`)
+        \`help\` - Shows the list of commands.
+        \`invite\` - Invite me to your server.
+        \`nostickers\` - Disables stickers for the specific channels.
+        \`stickers\` - Enables stickers for the specific channels.
+        `)
         .setFooter(
             `Requested by ${message.author.tag}`,
             message.author.displayAvatarURL({
