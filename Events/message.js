@@ -17,7 +17,7 @@ module.exports = async (client, message) => {
 
   try {
     await commandfile.main(client, message, args);
-  } catch (error) {
-    console.log(chalk.red(error.stack));
+  } catch (e) {
+    console.log(chalk.red(e));
   }
 };
