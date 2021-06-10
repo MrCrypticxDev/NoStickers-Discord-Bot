@@ -1,25 +1,26 @@
-const Guild = require('../Models/Guild.js');
 const Discord = require('discord.js');
+const Guild = require('../Models/Guild.js');
+
 /**
- * stickers command
+ * Stickers command
  */
 class stickersCommand {
   /**
-   * Assign command properties
+   * Assign the command properties
    */
   constructor() {
     this.name = 'stickers';
   }
 
   /**
-   * delete stickers in specified channel
-   * @param {client} client discord.js client instance
-   * @param {message} message discord.js message instance
-   * @param {Array.<string>} args message arguments
+   * Allows stickers in the specified channel(s)
+   * @param {client} client Discord.js client instance
+   * @param {message} message Discord.js message instance
+   * @param {Array.<string>} args The message arguments
    * @return {void}
    */
   async main(client, message, args) {
-    // allows to send stickers in specified channel
+    // Allows sending of stickers in the specified channel(s)
 
     if (!message.member.hasPermission(['MANAGE_CHANNEL', 'MANAGE_MESSAGE'])) {
       // eslint-disable-next-line max-len
@@ -53,7 +54,7 @@ class stickersCommand {
           .setDescription(`<:white_check_mark:726203404799442965> Stickers will be allowed in the given channel\s.`)
           .setColor('#fefbfb'),
     });
-    return msg.delete({timeout: 10000}).catch();
+    return msg.delete({ timeout: 10000 }).catch(console.error);
   }
 }
 
