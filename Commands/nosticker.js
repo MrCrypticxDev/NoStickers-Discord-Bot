@@ -1,22 +1,23 @@
-const Guild = require('../Models/Guild.js');
 const Discord = require('discord.js');
+const Guild = require('../Models/Guild.js');
+
 /**
- * no sticker
+ * No sticker command
  */
 class nostickerCommand {
   /**
-   * Assign command properties
+   * Assign the command properties
    */
   constructor() {
     this.name = 'nostickers';
   }
 
   /**
-   * delete stickers in specified channel
-   * @param {client} client discord.js client instance
-   * @param {message} message discord.js message instance
-   * @param {Array.<string>} args message arguments
-   * @return {void}
+   * Delete stickers in the specified channel(s)
+   * @param {client} client Discord.js client instance
+   * @param {message} message Discord.js message instance
+   * @param {Array<string>} args The message arguments
+   * @returns {void}
    */
   async main(client, message, args) {
     if (!message.member.hasPermission(['MANAGE_CHANNEL', 'MANAGE_MESSAGE'])) {
