@@ -1,5 +1,6 @@
-const {Collection, Client} = require('discord.js');
-const {connect} = require('mongoose');
+const chalk = require('chalk');
+const { Client, Collection } = require('discord.js');
+const { connect } = require('mongoose');
 const client = new Client();
 
 client.config = require('./config.json');
@@ -16,4 +17,4 @@ connect(client.config.mongoURL, {
       require(`./Handlers/${s}.js`)(client);
     });
   });
-}).catch((e) => console.log(e.stack));
+}).catch((e) => console.log(chalk.red(e)));
