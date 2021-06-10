@@ -5,15 +5,15 @@ const Guild = require('../../Models/Guild.js');
  */
 class ManageMessage {
   /**
-   * assign discord.js message instance
-   * @param {message} msg  - discord.js message instance
+   * Assign the discord.js message instance
+   * @param {message} msg  - The Discord.js message instance
    */
   constructor(msg) {
     this.msg = msg;
   }
 
   /**
-   * Checks if channel is sticker channel
+   * Checks if the channel allows stickers
    */
   async isStickerChannel() {
     // eslint-disable-next-line max-len
@@ -25,7 +25,7 @@ class ManageMessage {
   }
 
   /**
-   * delete message if sticker
+   * Delete the message if it contains a sticker
    */
   async deleteSticker() {
     // eslint-disable-next-line max-len
