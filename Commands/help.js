@@ -1,22 +1,22 @@
-const {MessageEmbed} = require('discord.js');
+const { MessageEmbed } = require('discord.js');
 
 /**
  * User help command
  */
 class helpCommand {
   /**
-   * Assign command properties
+   * Assign the command properties
    */
   constructor() {
     this.name = 'help';
   }
 
   /**
-   * shows help embed
-   * @param {client} client discord.js client instance
-   * @param {message} message discord.js message instance
-   * @param {Array.<string>} args message arguments
-   * @return {void}
+   * Shows the help embed
+   * @param {client} client Discord.js client instance
+   * @param {message} message Discord.js message instance
+   * @param {Array.<string>} args The message arguments
+   * @returns {void}
    */
   async main(client, message, args) {
     const helpEmbed = new MessageEmbed()
@@ -26,7 +26,6 @@ class helpCommand {
 \`stickers\` - Enables stickers for the specific channels
 \`nostickers\` - Disables stickers for the specific channels
 \`invite\` - Invite me to your server.
-\`github\` - The link to my repository.
 `)
         .setFooter(
             `Requested by ${message.author.tag}`,
