@@ -30,8 +30,8 @@ class evalCommand {
       // eslint-disable-next-line max-len
       const code = args[0].toLowerCase() == '-a' ? args.slice(1).join(' ') : args.join(' ');
       // eslint-disable-next-line max-len
-      const fullCode = args[0].toLowerCase() == '-a' ? `(async () => {\n{code}\n})()`: '{code}';
-      const str = fullCode.replace(`{code}`, code);
+      const fullCode = args[0].toLowerCase() == '-a' ? '(async () => {\n{code}\n})()': '{code}';
+      const str = fullCode.replace('{code}', code);
       const evaluation = util.inspect(await eval(str), {
         depth: 0,
       });

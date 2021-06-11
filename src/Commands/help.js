@@ -20,23 +20,23 @@ class helpCommand {
    */
   async main(client, message, args) {
     const helpEmbed = new MessageEmbed()
-        .setAuthor('NoStickers\'s Help Menu', client.user.avatarURL())
-        .setColor('#f04747')
-        .setDescription(`
+      .setAuthor('NoStickers\'s Help Menu', client.user.avatarURL())
+      .setColor('#f04747')
+      .setDescription(`
         \`help\` - Shows the list of commands.
         \`invite\` - Invite me to your server.
         \`nostickers\` - Disables stickers for the specific channels.
         \`stickers\` - Enables stickers for the specific channels.
         `)
-        .setFooter(
-            `Requested by ${message.author.tag}`,
-            message.author.displayAvatarURL({
-              dynamic: true,
-              size: 1024,
-              format: 'png',
-            }),
-        )
-        .setTimestamp();
+      .setFooter(
+        `Requested by ${message.author.tag}`,
+        message.author.displayAvatarURL({
+          dynamic: true,
+          size: 1024,
+          format: 'png',
+        }),
+      )
+      .setTimestamp();
     message.channel.send(helpEmbed);
   }
 }

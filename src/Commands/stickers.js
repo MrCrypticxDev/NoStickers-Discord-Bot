@@ -35,24 +35,24 @@ class stickersCommand {
     // $pullAll - removes values from existing array
     // https://docs.mongodb.com/manual/reference/operator/update/pullAll/
     await Guild.findOneAndUpdate(
-        {
-          guildID: message.guild.id,
+      {
+        guildID: message.guild.id,
+      },
+      {
+        $pullAll: {
+          disableStickerUsage: channels,
         },
-        {
-          $pullAll: {
-            disableStickerUsage: channels,
-          },
-        },
-        {
-          upsert: true,
-        },
+      },
+      {
+        upsert: true,
+      },
     );
 
     const msg = await message.channel.send({
       embed: new Discord.MessageEmbed()
-          // eslint-disable-next-line max-len
-          .setDescription(`<:white_check_mark:726203404799442965> Stickers will be allowed in the given channel\s.`)
-          .setColor('#fefbfb'),
+      // eslint-disable-next-line max-len
+        .setDescription('<:white_check_mark:726203404799442965> Stickers will be allowed in the given channel\s.')
+        .setColor('#fefbfb'),
     });
     return msg.delete({ timeout: 10000 }).catch(console.error);
   }

@@ -34,26 +34,26 @@ class nostickerCommand {
     // $addToSet - adds elements to array only if they do not already exist in set
     // https://docs.mongodb.com/manual/reference/operator/update/addToSet/#addtoset-modifiers
     await Guild.findOneAndUpdate(
-        {
-          guildID: message.guild.id,
-        },
-        {
-          $addToSet: {
-            disableStickerUsage: {
-              $each: channels,
-            },
+      {
+        guildID: message.guild.id,
+      },
+      {
+        $addToSet: {
+          disableStickerUsage: {
+            $each: channels,
           },
         },
-        {
-          upsert: true,
-        },
+      },
+      {
+        upsert: true,
+      },
     );
 
     return message.channel.send({
       embed: new Discord.MessageEmbed()
-          // eslint-disable-next-line max-len
-          .setDescription("<:white_check_mark:726203404799442965> Stickers will be deleted in the given channel\s.")
-          .setColor('#fefbfb'),
+      // eslint-disable-next-line max-len
+        .setDescription('<:white_check_mark:726203404799442965> Stickers will be deleted in the given channel\s.')
+        .setColor('#fefbfb'),
     });
   }
 }
