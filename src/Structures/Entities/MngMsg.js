@@ -5,7 +5,7 @@ const Guild = require('../../Models/Guild.js');
  */
 class ManageMessage {
   /**
-   * Assign the discord.js message instance
+   * Assign the Discord.js message instance
    * @param {message} msg  - The Discord.js message instance
    */
   constructor(msg) {
@@ -17,7 +17,7 @@ class ManageMessage {
    */
   async isStickerChannel() {
     // eslint-disable-next-line max-len
-    const {disableStickerUsage = []} = await Guild.findOne({guildID: this.msg.guild.id}) ?? {disableStickerUsage: []};
+    const {disableStickerUsage = []} = await Guild.findOne({ guildID: this.msg.guild.id }) ?? { disableStickerUsage: [] };
 
     if (disableStickerUsage.length == 0) return false;
     if (disableStickerUsage.includes(this.msg.channel.id)) return true;
