@@ -28,7 +28,7 @@
     "mongoose": "^5.12.13"
   },
   "devDependencies": {
-    "eslint": "^7.28.0",
+    "eslint": "^7.28.0"
   },
   "engines": {
     "node": ">=14.0.0"
