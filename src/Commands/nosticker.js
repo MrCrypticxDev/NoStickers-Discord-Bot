@@ -19,6 +19,7 @@ class nostickerCommand {
    * @param {Array<string>} args The message arguments
    * @returns {void}
    */
+  // eslint-disable-next-line no-unused-vars
   async main(client, message, args) {
     if (!message.member.hasPermission(['MANAGE_CHANNEL', 'MANAGE_MESSAGE'])) {
       // eslint-disable-next-line max-len
@@ -30,7 +31,6 @@ class nostickerCommand {
         [message.channel.id] :
         message.mentions.channels.array().map((c) => c.id);
 
-    // eslint-disable-next-line max-len
     // $addToSet - adds elements to array only if they do not already exist in set
     // https://docs.mongodb.com/manual/reference/operator/update/addToSet/#addtoset-modifiers
     await Guild.findOneAndUpdate(
@@ -52,7 +52,7 @@ class nostickerCommand {
     return message.channel.send({
       embed: new Discord.MessageEmbed()
       // eslint-disable-next-line max-len
-        .setDescription('<:white_check_mark:726203404799442965> Stickers will be deleted in the given channel\s.')
+        .setDescription('<:white_check_mark:726203404799442965> Stickers will be deleted in the given channel(s).')
         .setColor('#fefbfb'),
     });
   }

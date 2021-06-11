@@ -18,6 +18,7 @@ class helpCommand {
    * @param {Array<string>} args The message arguments
    * @returns {void}
    */
+  // eslint-disable-next-line no-unused-vars
   async main(client, message, args) {
     const helpEmbed = new MessageEmbed()
       .setAuthor('NoStickers\'s Help Menu', client.user.avatarURL())

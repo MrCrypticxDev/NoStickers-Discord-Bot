@@ -19,11 +19,11 @@ class stickersCommand {
    * @param {Array<string>} args The message arguments
    * @returns {void}
    */
+  // eslint-disable-next-line no-unused-vars
   async main(client, message, args) {
     // Allows sending of stickers in the specified channel(s)
 
     if (!message.member.hasPermission(['MANAGE_CHANNEL', 'MANAGE_MESSAGE'])) {
-      // eslint-disable-next-line max-len
       return message.channel.send('<:xtempl:726203462781501481> You do not have the `MANAGE_CHANNELS` permission.');
     }
 
@@ -50,8 +50,7 @@ class stickersCommand {
 
     const msg = await message.channel.send({
       embed: new Discord.MessageEmbed()
-      // eslint-disable-next-line max-len
-        .setDescription('<:white_check_mark:726203404799442965> Stickers will be allowed in the given channel\s.')
+        .setDescription('<:white_check_mark:726203404799442965> Stickers will be allowed in the given channel(s).')
         .setColor('#fefbfb'),
     });
     return msg.delete({ timeout: 10000 }).catch(console.error);

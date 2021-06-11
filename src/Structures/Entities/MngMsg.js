@@ -16,7 +16,6 @@ class ManageMessage {
    * Checks if the channel allows stickers
    */
   async isStickerChannel() {
-    // eslint-disable-next-line max-len
     const {disableStickerUsage = []} = await Guild.findOne({ guildID: this.msg.guild.id }) ?? { disableStickerUsage: [] };
 
     if (disableStickerUsage.length == 0) return false;
@@ -28,7 +27,6 @@ class ManageMessage {
    * Delete the message if it contains a sticker
    */
   async deleteSticker() {
-    // eslint-disable-next-line max-len
     if (this.msg.content.length == 0 && this.msg.attachments.size == 0 && this.msg.embeds.length == 0) {
       this.msg.delete();
     }

@@ -12,7 +12,8 @@ class evalCommand {
     this.name = 'eval';
     this.aliases = ['elevate'];
     this.description = 'Elevated eval cmd';
-    this.category = path.basename(__dirname);
+    // eslint-disable-next-line no-undef
+    this.category = path.basename(__dirname); 
     this.usage = 'eval <query>';
   }
 
@@ -27,19 +28,15 @@ class evalCommand {
     if (!client.config.ownerIDs.includes(message.author.id)) return;
 
     try {
-      // eslint-disable-next-line max-len
       const code = args[0].toLowerCase() == '-a' ? args.slice(1).join(' ') : args.join(' ');
-      // eslint-disable-next-line max-len
       const fullCode = args[0].toLowerCase() == '-a' ? '(async () => {\n{code}\n})()': '{code}';
       const str = fullCode.replace('{code}', code);
       const evaluation = util.inspect(await eval(str), {
         depth: 0,
       });
-      // eslint-disable-next-line max-len
       return message.channel.send(`\`\`\`js\n${evaluation}\`\`\``).catch(console.error);
     } catch (e) {
-      // eslint-disable-next-line max-len
-      return message.channel.send(`\`\`\`js\n${error.message}\`\`\``).catch(console.error);
+      return message.channel.send(`\`\`\`js\n${e.message}\`\`\``).catch(console.error);
     }
   }
 }

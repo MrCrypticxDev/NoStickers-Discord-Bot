@@ -8,17 +8,14 @@ module.exports = (client) => {
       const Prop = require(`.${fp}`);
       const cmd = new Prop();
       cmd.category = path.dirname(fp).split(path.sep).reverse()[0];
-      // eslint-disable-next-line max-len
       if (!cmd.name) throw new Error(`${path.basename(fp)} does not have a name property!`);
       client.commands.set(cmd.name, cmd);
       if (!cmd.aliases) return;
-      // eslint-disable-next-line max-len
       if (!Array.isArray(cmd.aliases)) throw new TypeError(`${path.basename(fp)} aliases provided aren't arrays.`);
       cmd.aliases.forEach((alias) => {
         client.aliases.set(alias, cmd);
       });
     } catch (e) {
-      // eslint-disable-next-line max-len
       if (e.message == 'prop is not a constructor') return console.log(`${fp} cannot create a new class instance.`);
       console.log(chalk.red(e));
     }
