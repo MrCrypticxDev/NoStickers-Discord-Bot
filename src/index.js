@@ -3,7 +3,7 @@ const { Client, Collection } = require('discord.js');
 const { connect } = require('mongoose');
 const client = new Client();
 
-client.config = require('./config.json');
+client.config = require('./config.js');
 client.commands = new Collection();
 client.aliases = new Collection();
 
