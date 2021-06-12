@@ -10,6 +10,10 @@ class nostickerCommand {
    */
   constructor() {
     this.name = 'nostickers';
+    this.aliases = [];
+    this.description = 'Disables usage of stickers in the given channels.';
+    this.category = 'General';
+    this.usage = 'nosticker <channel>';
   }
 
   /**
