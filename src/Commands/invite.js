@@ -7,6 +7,10 @@ class inviteCommand {
    */
   constructor() {
     this.name = 'invite';
+    this.aliases = [];
+    this.description = 'Shows the link for inviting the bot to your server.';
+    this.category = 'General';
+    this.usage = 'invite';
   }
 
   /**
