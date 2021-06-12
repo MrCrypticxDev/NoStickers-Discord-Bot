@@ -10,6 +10,10 @@ class stickersCommand {
    */
   constructor() {
     this.name = 'stickers';
+    this.aliases = [];
+    this.description = 'Allows sending of stickers in the given channels.';
+    this.category = 'General';
+    this.usage = 'stickers <channel>';
   }
 
   /**
