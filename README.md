@@ -26,7 +26,7 @@ So now you have a copy, follow the steps below:
 * `YOUR_BOT_TOKEN` refers to the token retrieved from the bot page of your app in the [Discord developer portal](https://discord.com/developers/applications). Need [help](https://www.writebots.com/discord-bot-token)? Note that it's recommended to use [`.env`](https://stackoverflow.com/a/41501273) files instead of hard coding the token.
 * `YOUR_USER_ID` refers to your user ID on Discord. There's an [article](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-) for that.
 * `YOUR_BOT_PREFIX` refers to the character your bot will detect for, so that it knows when to respond to a command. For example, `!`.
-* `YOUR_MONGODB_URL` refers to the URL of your MongoDB cluster. If you don't have one, you may use a generic link, refer [here](https://mongoosejs.com/docs/connections.html).
+* `YOUR_MONGODB_URL` refers to the URL of your MongoDB cluster.
 4. Run `node src/index.js` to start the bot. Don't forget to invite it!
 5. And lastly, **enjoy Stickers while you can.** 🌺
 
