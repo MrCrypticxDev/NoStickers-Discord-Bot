@@ -9,6 +9,10 @@ class helpCommand {
    */
   constructor() {
     this.name = 'help';
+    this.aliases = [];
+    this.description = 'Shows the available commands for the NoStickers bot.';
+    this.category = 'General';
+    this.usage = 'help';
   }
 
   /**
