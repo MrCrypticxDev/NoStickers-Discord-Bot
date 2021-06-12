@@ -1,5 +1,3 @@
- professional setting
-
 ## Our Responsibilities
 
 Project maintainers are responsible for clarifying the standards of acceptable
