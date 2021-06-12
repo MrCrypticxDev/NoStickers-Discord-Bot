@@ -55,10 +55,9 @@ Before making a review, make a thorough scan through the files changed. If you s
 3. Tap on the plus button beside the number.
 4. Add the following to the comment:
 
-\`\`\`suggestion 
-SUGGESTION
-\`\`\`
- 
+```
+```suggestion SUGGESTION```
+```
 "SUGGESTION" is the suggestion you want to replace the old one with.
 
 5. Create a review.
@@ -68,7 +67,7 @@ If you don't have any specific suggestion, you may just make a comment without t
 
 ## Discussions
   
-If you have any question or any idea to share, you may go to the discussion area of this repository and ask your question(s) in the appropriate section.
+If you have any question or any idea to share, you may go to the discussion area of this repository and ask your question(s) in the appropriate section. When answering a question, make sure to be respectful to others. If you got answered and it's correct, mark it as the correct answer. Otherwise, just be patient until you get the needed one.
   
 ---
   
