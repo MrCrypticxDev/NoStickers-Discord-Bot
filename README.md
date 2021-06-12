@@ -14,6 +14,7 @@ NoStickers is a Discord bot that allows you to prevent or enable the usage of Di
 * (Optional) Git
 
 **Setup**
+
 Firstly, you need to have a local copy of this repository on your code editor, you may either:
 1. Clone this repository via `git clone https://github.com/MrCrypticXDev/NoStickers-Discord-Bot.git`. Note that if needed, you'll have to `cd` to the directory the files are in.
 2. Copy the contents of this repository.
