@@ -4,14 +4,14 @@
 ## About
 The source code for the NoStickers bot that uses Discord.js. It also has an added-on customizable tweaks/configs for server admins. 👀
 
-NoStickers is a Discord bot that allows you to prevent or enable the usage of Discord's [sticker feature](https://support.discord.com/hc/en-us/articles/1500008542422-Sticker-Updates-FAQ-Android-and-Desktop). To get a list of commands, run `!help`.
+NoStickers is a Discord bot that allows you to prevent or enable the usage of Discord's [sticker feature](https://support.discord.com/hc/en-us/articles/1500008542422-Sticker-Updates-FAQ-Android-and-Desktop). Assuming your prefix is `!`, getting a list of commands can be done by running `!help`.
 
 ## Installation
 **Prerequisites**
 * [Node.js](https://nodejs.org) v14 or higher
 * [NPM](https://npmjs.com)
-* (Optional) A MongoDB account
-* (Optional) Git
+* (Optional) A [MongoDB](https://mongodb.com) account
+* (Optional) [Git](https://git-scm.org)
 
 **Setup**
 
@@ -23,7 +23,7 @@ So now you have a copy, follow the steps below:
 1. You may optionally configure the [package](package.json) file to your needs. Or create your own by running `npm init`.
 2. Run `npm install` to get the dependencies and devDependencies.
 3. In the [config](src/config.json) file, set the following variables with the necessary values:
-* `YOUR_BOT_TOKEN` refers to the token retrieved from the bot page of your app in the [Discord developer portal](https://discord.com/developers/applications). Need [help](https://www.writebots.com/discord-bot-token)?
+* `YOUR_BOT_TOKEN` refers to the token retrieved from the bot page of your app in the [Discord developer portal](https://discord.com/developers/applications). Need [help](https://www.writebots.com/discord-bot-token)? Note that it's recommended to use [`.env`](https://stackoverflow.com/a/41501273) files instead of hard coding the token.
 * `YOUR_USER_ID` refers to your user ID on Discord. There's an [article](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-) for that.
 * `YOUR_BOT_PREFIX` refers to the character your bot will detect for, so that it knows when to respond to a command. For example, `!`.
 * `YOUR_MONGODB_URL` refers to the URL of your MongoDB cluster. If you don't have one, you may use a generic link, refer [here](https://mongoosejs.com/docs/connections.html).
