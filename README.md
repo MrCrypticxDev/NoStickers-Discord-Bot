@@ -1,6 +1,6 @@
 # NoStickers-Discord-Bot
 [![Discord Bots](https://socialify.git.ci/MrCrypticXDev/NoStickers-Discord-Bot/image?description=1&descriptionEditable=The%20source%20code%20for%20the%20NoStickers%20bot%20that%20uses%20Discord.js.%20It%20also%20has%20an%20added-on%20customizable%20tweaks%2Fconfigs%20for%20server%20admins.%20%F0%9F%91%80&forks=1&language=1&owner=1&pattern=Plus&stargazers=1&theme=Light)](![NoStickers-Discord-Bot](![NoStickers-Discord-Bot](https://socialify.git.ci/MrCrypticXDev/NoStickers-Discord-Bot/image?description=1&descriptionEditable=The%20source%20code%20for%20the%20NoStickers%20bot%20that%20uses%20Discord.js.%20It%20also%20has%20an%20added-on%20customizable%20tweaks%2Fconfigs%20for%20server%20admins.%20%F0%9F%91%80&forks=1&language=1&owner=1&pattern=Plus&stargazers=1&theme=Light)))
-
+[![ESLint](https://github.com/MrCrypticXDev/NoStickers-Discord-Bot/actions/workflows/lint.yml/badge.svg)](https://github.com/MrCrypticXDev/NoStickers-Discord-Bot/actions/workflows/lint.yml)
 ## About
 The source code for the NoStickers bot that uses Discord.js. It also has an added-on customizable tweaks/configs for server admins. 👀
 
