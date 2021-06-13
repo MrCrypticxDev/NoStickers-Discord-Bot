@@ -1,8 +1,0 @@
-{
-	"prefix": "!",
-	"token": "YOUR_BOT_TOKEN",
-	"mongoURL": "YOUR_MONGOURL",
-	"ownerIDs": [
-		"YOUR_USER_ID"
-	]
-}

@@ -1,4 +1,4 @@
-const {Schema, model} = require('mongoose');
+const { model, Schema } = require('mongoose');
 
 const NoStickersGuildSchema = new Schema({
   guildID: String,
