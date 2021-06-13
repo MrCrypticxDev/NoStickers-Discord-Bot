@@ -1,6 +1,8 @@
 # NoStickers-Discord-Bot
 [![Discord Bots](https://socialify.git.ci/MrCrypticXDev/NoStickers-Discord-Bot/image?description=1&descriptionEditable=The%20source%20code%20for%20the%20NoStickers%20bot%20that%20uses%20Discord.js.%20It%20also%20has%20an%20added-on%20customizable%20tweaks%2Fconfigs%20for%20server%20admins.%20%F0%9F%91%80&forks=1&language=1&owner=1&pattern=Plus&stargazers=1&theme=Light)](![NoStickers-Discord-Bot](![NoStickers-Discord-Bot](https://socialify.git.ci/MrCrypticXDev/NoStickers-Discord-Bot/image?description=1&descriptionEditable=The%20source%20code%20for%20the%20NoStickers%20bot%20that%20uses%20Discord.js.%20It%20also%20has%20an%20added-on%20customizable%20tweaks%2Fconfigs%20for%20server%20admins.%20%F0%9F%91%80&forks=1&language=1&owner=1&pattern=Plus&stargazers=1&theme=Light)))
 [![ESLint](https://github.com/MrCrypticXDev/NoStickers-Discord-Bot/actions/workflows/lint.yml/badge.svg)](https://github.com/MrCrypticXDev/NoStickers-Discord-Bot/actions/workflows/lint.yml) [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg)](.github/CODE_OF_CONDUCT.md)
+> This interactions branch is currently a WIP, it is not safe to use while it is being developed. Please refer to [the main branch](https://github.com/MrCrypticXDev/NoStickers-Discord-Bot) instead.
+
 ## About
 The source code for the NoStickers bot that uses Discord.js. It also has an added-on customizable tweaks/configs for server admins. 👀
 
@@ -27,6 +29,7 @@ So now you have a copy, follow the steps below:
 * `YOUR_USER_ID` refers to your user ID on Discord. There's an [article](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-) for that.
 * `YOUR_BOT_PREFIX` refers to the character your bot will detect for, so that it knows when to respond to a command. For example, `!`.
 * `YOUR_MONGODB_URL` refers to the URL of your MongoDB cluster.
+* `YOUR_APP_PUBLIC_KEY` refers to the public key retrieved from your app in the developer portal. This appears in the general page, just below the app ID.
 4. Run `node src/index.js` to start the bot. Don't forget to invite it!
 5. And lastly, **enjoy Stickers while you can.** 🌺
 
