@@ -1,1 +1,5 @@
 blank_issues_enabled: false
+contact_links:
+  - name: Discussions
+    url: https://github.com/MrCrypticXDev/NoStickers-Discord-Bot/discussions
+    about: Use our repository's discussions area to ask questions or share ideas
