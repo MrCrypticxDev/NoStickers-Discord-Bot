@@ -1,6 +1,6 @@
 {
   "name": "NoStickers-Structures",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "The Source Code for NoStickers bot written in Discord.js also added on customizable tweaks/configs for server admins. 👀",
   "main": "./src/index.js",
   "scripts": {
