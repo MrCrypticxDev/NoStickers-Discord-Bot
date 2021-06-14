@@ -1,5 +1,5 @@
 # NoStickers-Discord-Bot
-![NoStickers-Discord-Bot](https://socialify.git.ci/MrCrypticXDev/NoStickers-Discord-Bot/image?description=1&descriptionEditable=The%20Source%20Code%20for%20NoStickers-Bot%20written%20in%20Discord.js%20using%20the%20database%20MongoDB%20for%20the%20channel%20settings!%20&font=Inter&forks=1&issues=1&language=1&logo=https%3A%2F%2Fo.remove.bg%2Fdownloads%2F8cfc7943-7fc7-4caf-a40f-a2e3811ef0c5%2F57736724-removebg-preview.png&owner=1&pattern=Brick%20Wall&pulls=1&stargazers=1&theme=Light)
+![NoStickers-Discord-Bot](https://socialify.git.ci/MrCrypticXDev/NoStickers-Discord-Bot/image?description=1&forks=1&issues=1&language=1&logo=https%3A%2F%2Fim-an.explorer.workers.dev%2FPgaUZal.png&owner=1&pattern=Circuit%20Board&pulls=1&stargazers=1&theme=Light)
 [![ESLint](https://github.com/MrCrypticXDev/NoStickers-Discord-Bot/actions/workflows/lint.yml/badge.svg)](https://github.com/MrCrypticXDev/NoStickers-Discord-Bot/actions/workflows/lint.yml) [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg)](.github/CODE_OF_CONDUCT.md)
 ## About
 The source code for the NoStickers bot that uses Discord.js. It also has an added-on customizable tweaks/configs for server admins. 👀
