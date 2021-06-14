@@ -11,7 +11,15 @@ module.exports = (client, request, response) => {
   const interaction = request.body;
   const args = interaction.data.options;
   
-  if (!client.config.ownerIDs.includes(interaction.member.user.id || interaction.member.user.id)) return;
+  if (!client.config.ownerIDs.includes(interaction.member.user.id || interaction.member.user.id)) {
+    return response.send({
+      type: 4,
+      data: {
+        content: 'Unfortunately, you cannot use this command.',
+        flags: 64
+      }
+    });
+  }
   
   try {
     const code = args.find(option => option.name === 'code').value == '-a' ? args.find(option => option.name === 'code').value.slice(1).join(' ') : args.find(option => option.name === 'code').value.join(' ');
