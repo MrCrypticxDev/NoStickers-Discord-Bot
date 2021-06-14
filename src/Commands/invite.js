@@ -22,7 +22,7 @@ class inviteCommand {
    */
   // eslint-disable-next-line no-unused-vars
   async main(client, message, args) {
-    return message.channel.send(`https://discord.com/oauth2/authorize?client_id=${client.user.id}&scope=bot&permissions=338944`);
+    return message.channel.send(`https://discord.com/oauth2/authorize?client_id=${client.user.id}&scope=bot+applications.commands&permissions=338944`);
   }
 }
 
