@@ -1,5 +1,5 @@
 /**
- * Execute the given code
+ * Shows the help embed
  * @param {client} client Discord.js client instance
  * @param {Object} request Express.js request payload
  * @param {response} response The response to send back
