@@ -1,10 +1,10 @@
 /**
-  * Execute the given code
-  * @param {client} client Discord.js client instance
-  * @param {Object} request Express.js request payload
-  * @param {response} response The response to send back
-  * @returns {void}
-*/
+ * Execute the given code
+ * @param {client} client Discord.js client instance
+ * @param {Object} request Express.js request payload
+ * @param {response} response The response to send back
+ * @returns {void}
+ */
 module.exports = (client, request, response) => {
   const interaction = request.body;
   
