@@ -30,8 +30,36 @@ So now you have a copy, follow the steps below:
 * `YOUR_BOT_PREFIX` refers to the character your bot will detect for, so that it knows when to respond to a command. For example, `!`.
 * `YOUR_MONGODB_URL` refers to the URL of your MongoDB cluster.
 * `YOUR_APP_PUBLIC_KEY` refers to the public key retrieved from your app in the developer portal. This appears in the general page, just below the app ID.
-4. Run `node src/index.js` to start the bot. Don't forget to invite it!
-5. And lastly, **enjoy Stickers while you can.** 🌺
+
+4. You'll have to register the slash commands. Don't worry, we got your back, so just follow the next bullet points:
+* Feel free to create a file (perhaps `create-slash-commands.js`). 
+* Stick this following piece of code:
+
+```js
+const fetch = require('node-fetch');
+
+const token= '';
+const id= '';
+
+const json = [{ name: 'eval', description: 'Executes the given code', options: [{ name: 'code', description: 'The code to evaluate', type: 3, required: true }] }, { name: 'help', description: 'Shows the help embed' }, { name: 'invite', description: 'The link for inviting the bot' }, { name: 'stickers', description: 'Allows stickers in the given channel', options: [{ name: 'channel', description: 'The channel to allow sending of stickers from', type: 7, required: true }] }, { name: 'nosticker', description: 'Deletes stickers in the given channel', options: [{ name: 'channel', description: 'The channel to disable usage of stickers from', type: 7, required: true }] }];
+
+for (const i of json) {
+    fetch(`https://discord.com/api/applications/${id}/commands`, {
+        method: 'POST',
+        headers: {
+            'Authorization': `Bot ${token}`,
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(i)
+    })
+        .then(res => res.json())
+        .then(data => console.log(data));
+}
+```
+* Run `node create-slash-commands.js`. Make sure to have node-fetch installed, as well as the details placed in the variables. If you see an output of JSON in your console without any error messages, you're good to go!
+
+5. Run `node src/index.js` to start the bot. Don't forget to invite it!
+6. And lastly, **enjoy Stickers while you can.** 🌺
 
 ## Additional information
 * You may run `npm run lint` to find errors in your code. There's also `npm run lint:fix` that has the ability to correct certain types of mistakes.
