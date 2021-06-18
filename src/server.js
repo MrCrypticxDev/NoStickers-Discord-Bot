@@ -10,7 +10,7 @@ module.exports = (client) => {
     
     if (interaction.type == 1) {
       response.send({ type: 1 });
-    }
+    };
     
     if (interaction.type == 2) {
       if (!files.has(interaction.data.name + '.js')) {
@@ -25,6 +25,8 @@ module.exports = (client) => {
       require(`./interactions/${interaction.data.name + '.js'}`)(client, request, response);
     }
   });
+  
+  response.send({ type: 1 });
   
   server.listen(8000);
 };
