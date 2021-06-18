@@ -38,8 +38,8 @@ So now you have a copy, follow the steps below:
 ```js
 const fetch = require('node-fetch');
 
-const token= '';
-const id= '';
+const token = '';
+const id = '';
 
 const json = [{ name: 'eval', description: 'Executes the given code', options: [{ name: 'code', description: 'The code to evaluate', type: 3, required: true }] }, { name: 'help', description: 'Shows the help embed' }, { name: 'invite', description: 'The link for inviting the bot' }, { name: 'stickers', description: 'Allows stickers in the given channel', options: [{ name: 'channel', description: 'The channel to allow sending of stickers from', type: 7, required: true }] }, { name: 'nosticker', description: 'Deletes stickers in the given channel', options: [{ name: 'channel', description: 'The channel to disable usage of stickers from', type: 7, required: true }] }];
 
