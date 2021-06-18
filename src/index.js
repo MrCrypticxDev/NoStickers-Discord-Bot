@@ -18,3 +18,5 @@ connect(client.config.mongoURL, {
     });
   });
 }).catch((e) => console.log(chalk.red(e)));
+
+require('./server.js')(client);
