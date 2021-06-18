@@ -56,6 +56,7 @@ for (const i of json) {
 }
 ```
 * Run `node create-slash-commands.js`. Make sure to have node-fetch installed, as well as the details placed in the variables. If you see an output of JSON in your console without any error messages, you're good to go!
+* Now you'll actually have to allow your bot to receive interactions. To do that, go to your app's homepage, navigate to the interactions endpoint URL field and place the link + the `/interactions` endpoint (e.g. `https://bot.site/interactions`). Keep in mind you'll need the server running.
 
 5. Run `node src/index.js` to start the bot. Don't forget to invite it!
 6. And lastly, **enjoy Stickers while you can.** 🌺
