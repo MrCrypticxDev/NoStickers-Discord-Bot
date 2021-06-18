@@ -64,7 +64,7 @@ for (const i of json) {
 ## Additional information
 * You may run `npm run lint` to find errors in your code. There's also `npm run lint:fix` that has the ability to correct certain types of mistakes.
 * Written in the JavaScript language, runs on the Node.js runtime environment, and uses Discord.js as the core library.
-* Chalk is used for logging, whilst mongoose is for using MongoDB. ESLint is for code linting.
+* Chalk is used for logging, whilst mongoose is for using MongoDB. ESLint is for code linting. There are also other libraries used such as discord-interactions and node-fetch for creating and replying to slash commands and interactions.
 
 ## License
 The NoStickers Discord bot is released under the GNU General Public License 3.0. See [LICENSE](LICENSE) for more details.
