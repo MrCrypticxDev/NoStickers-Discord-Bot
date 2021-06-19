@@ -34,9 +34,9 @@ class evalCommand {
       const evaluation = util.inspect(await eval(str), {
         depth: 0,
       });
-      return message.channel.send(`\`\`\`js\n${evaluation}\`\`\``).catch(console.error);
+      return message.channel.send({ content: `\`\`\`js\n${evaluation}\`\`\`` }).catch(console.error);
     } catch (e) {
-      return message.channel.send(`\`\`\`js\n${e.message}\`\`\``).catch(console.error);
+      return message.channel.send({ content: `\`\`\`js\n${e.message}\`\`\`` }).catch(console.error);
     }
   }
 }
