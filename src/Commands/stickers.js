@@ -28,7 +28,7 @@ class stickersCommand {
     // Allows sending of stickers in the specified channel(s)
 
     if (!message.member.hasPermission(['MANAGE_CHANNEL', 'MANAGE_MESSAGE'])) {
-      return message.channel.send('<:xtempl:726203462781501481> You do not have the `MANAGE_CHANNELS` permission.');
+      return message.channel.send({ content: '<:xtempl:726203462781501481> You do not have the `MANAGE_CHANNELS` permission.' });
     }
 
     const channels =
@@ -53,11 +53,13 @@ class stickersCommand {
     );
 
     const msg = await message.channel.send({
-      embed: new Discord.MessageEmbed()
-        .setDescription('<:white_check_mark:726203404799442965> Stickers will be allowed in the given channel(s).')
-        .setColor('#fefbfb'),
-    });
-    return msg.delete({ timeout: 10000 }).catch(console.error);
+      embeds: [new Discord.MessageEmbed()
+               .setDescription('<:white_check_mark:726203404799442965> Stickers will be allowed in the given channel(s).')
+               .setColor('#fefbfb')]
+    });   
+    setTimeout(async () => {
+      await msg.delete().catch(console.error);
+    }, 10000);
   }
 }
 
