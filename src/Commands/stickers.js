@@ -51,11 +51,11 @@ class stickersCommand {
         upsert: true,
       },
     );
-
+    
     const msg = await message.channel.send({
       embeds: [new Discord.MessageEmbed()
-               .setDescription('<:white_check_mark:726203404799442965> Stickers will be allowed in the given channel(s).')
-               .setColor('#fefbfb')]
+        .setDescription('<:white_check_mark:726203404799442965> Stickers will be allowed in the given channel(s).')
+        .setColor('#fefbfb')]
     });   
     setTimeout(async () => {
       await msg.delete().catch(console.error);
