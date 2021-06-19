@@ -42,7 +42,7 @@ class helpCommand {
         }),
       )
       .setTimestamp();
-    message.channel.send(helpEmbed);
+    message.channel.send({ embeds: [helpEmbed] });
   }
 }
 
