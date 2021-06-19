@@ -1,7 +1,7 @@
 const chalk = require('chalk');
 const { Client, Collection } = require('discord.js');
 const { connect } = require('mongoose');
-const client = new Client();
+const client = new Client({ intents: 4609 });
 
 client.config = require('./config.js');
 client.commands = new Collection();
