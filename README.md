@@ -3,7 +3,6 @@
 [![ESLint](https://github.com/MrCrypticXDev/NoStickers-Discord-Bot/actions/workflows/lint.yml/badge.svg)](https://github.com/MrCrypticXDev/NoStickers-Discord-Bot/actions/workflows/lint.yml) [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg)](.github/CODE_OF_CONDUCT.md)
 
 ## About
-The source code for the NoStickers bot that uses Discord.js. It also has an added-on customizable tweaks/configs for server admins. 👀
 
 NoStickers is a Discord bot that allows you to prevent or enable the usage of Discord's [sticker feature](https://support.discord.com/hc/en-us/articles/1500008542422-Sticker-Updates-FAQ-Android-and-Desktop). Assuming your prefix is `!`, getting a list of commands can be done by running `!help`.
 
