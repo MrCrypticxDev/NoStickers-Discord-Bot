@@ -26,8 +26,7 @@ class nostickerCommand {
   // eslint-disable-next-line no-unused-vars
   async main(client, message, args) {
     if (!message.member.hasPermission(['MANAGE_CHANNEL', 'MANAGE_MESSAGE'])) {
-      // eslint-disable-next-line max-len
-      return message.channel.send('<:xtempl:726203462781501481> You do not have the `MANAGE_CHANNELS` permission.');
+      return message.channel.send({ content: '<:xtempl:726203462781501481> You do not have the `MANAGE_CHANNELS` permission.' });
     }
 
     const channels =
@@ -54,10 +53,9 @@ class nostickerCommand {
     );
 
     return message.channel.send({
-      embed: new Discord.MessageEmbed()
-      // eslint-disable-next-line max-len
+      embeds: [new Discord.MessageEmbed()
         .setDescription('<:white_check_mark:726203404799442965> Stickers will be deleted in the given channel(s).')
-        .setColor('#fefbfb'),
+        .setColor('#fefbfb')]
     });
   }
 }
